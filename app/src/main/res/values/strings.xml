@@ -5,4 +5,8 @@
     <string name="play">play</string>
     <string name="background_books">background books</string>
     <string name="image_magick_books">image magick books</string>
+    <string name="answer_1">answer 1</string>
+    <string name="answer_2">answer 2</string>
+    <string name="answer_3">answer 3</string>
+    <string name="play_again">play again</string>
 </resources>
