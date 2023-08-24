@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BookQuiz</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rules">match the cover of the book with its first line</string>
+    <string name="play">play</string>
+    <string name="background_books">background books</string>
+    <string name="image_magick_books">image magick books</string>
 </resources>
