@@ -1,5 +1,6 @@
 package com.gap.bookquiz.database
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
@@ -10,7 +11,7 @@ interface GameDao {
     @Insert
     suspend fun insert(book: Game)
 
-    @Query("UPDATE game SET selectedBookId = NULL") // мб ошибка
+    @Query("UPDATE game SET selectedBookId = NULL")
     suspend fun updateAllQuestion()
 
     @Query("UPDATE game SET selectedBookId = :selectedBookId WHERE rightBookId = :rightBookId")
@@ -22,10 +23,10 @@ interface GameDao {
     @Query("SELECT * FROM game WHERE rightBookId =:rightBookId")
     suspend fun getAnotherCover(rightBookId: Int): Game
 
-    @Query("SELECT * FROM game WHERE selectedBookId IS NOT NULL")
-    suspend fun getAll(): List<Game>
+    @Query("SELECT * FROM game")
+   suspend fun getAll(): List<Game>
 
-    @Query("SELECT COUNT(rightBookId) FROM game WHERE rightBookId = selectedBookId AND selectedBookId IS NOT NULL")
+    @Query("SELECT COUNT(rightBookId) FROM game WHERE bookCover = selectedBookId AND selectedBookId IS NOT NULL")
     suspend fun countRightAnswers(): Int
 
     @Query("SELECT COUNT(*) FROM game")

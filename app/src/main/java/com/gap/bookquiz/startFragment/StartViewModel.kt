@@ -103,8 +103,10 @@ class StartViewModel(val dao: GameDao) : ViewModel() {
                 dao.insert(gameElement11)
             }
         }
-
     }
-
-
+    fun updateTable() {
+        viewModelScope.launch {
+            dao.updateAllQuestion()
+        }
+    }
 }

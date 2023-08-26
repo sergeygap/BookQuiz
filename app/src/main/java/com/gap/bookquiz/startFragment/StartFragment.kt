@@ -42,6 +42,7 @@ class StartFragment : Fragment() {
     private fun clickListener() {
         binding.buttonPlay.setOnClickListener {
             launchFragment(GameFragment())
+            viewModel.updateTable()
         }
     }
 
