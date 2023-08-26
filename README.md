@@ -4,12 +4,13 @@
 1. Splash screen: экран загрузки.
 2. Экран "StartFragment": экран с кнопкой, позволяющей начать игру.
 3. Экран "GameFragment": экран игры, на котором отображено первое предложение книги и варианта ответов, представленных обложками книг.
-4. Экран "FinishFragment": экран с  информацией о количестве правильных ответов и возможностью начать игру заново.
+4. Экран "FinishFragment": экран с детальной информацией о количестве правильных ответов и списком выбранных ответов.
 ## Технические детали реализации
 - Язык программирования: Kotlin;
 - Работа с UI: Constraint Layout, Material Design, ViewBinding, Fragments (SAA);
 - Работа с базой данных: Room, LiveData, Coroutines;
 - Архитектурный паттерн: MVVM (Model-View-ViewModel), Clean Architecture.
 ## Flow приложения
+![2023-08-26_20h09_01](https://github.com/sergeygap/BookQuiz/assets/90153806/442d0fd0-640a-433d-b83e-ad0cee156966)
 ## Контакты
 Tg: @sergeygap
