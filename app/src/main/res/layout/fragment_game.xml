@@ -41,7 +41,6 @@
             android:layout_marginEnd="8dp"
             android:fontFamily="@font/oswald"
             android:padding="@dimen/small_padding_8dp"
-            tools:text="@string/rules"
             android:textAllCaps="true"
             android:textColor="@color/light_blue"
             android:textSize="18sp"

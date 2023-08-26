@@ -10,6 +10,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/oswald"
+            android:padding="@dimen/small_padding_8dp"
+            android:paddingStart="@dimen/_12dp"
+            android:textAllCaps="true"
+            android:textColor="@color/light_blue"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/magick_books"
+            tools:text="@string/number_of_correct_answer" />
 
         <ImageView
             android:id="@+id/imageView29"
@@ -18,6 +36,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView63"
             tools:src="@tools:sample/avatars" />
@@ -29,6 +48,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="64dp"
             android:text="Right answer:"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView60" />
 
@@ -40,6 +60,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -51,6 +72,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/textView52"
             app:layout_constraintStart_toEndOf="@+id/textView52"
             app:layout_constraintTop_toTopOf="@+id/textView52"
@@ -62,6 +84,7 @@
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="14dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView59"
             tools:src="@tools:sample/avatars" />
@@ -73,6 +96,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:text="Question 10"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView27" />
 
@@ -83,6 +107,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView60" />
 
@@ -93,6 +118,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView58"
             tools:src="@tools:sample/avatars" />
@@ -104,6 +130,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="64dp"
             android:text="Right answer:"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView55" />
 
@@ -115,6 +142,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -128,7 +156,8 @@
             android:layout_marginEnd="14dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView54"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/avatars"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/textView57"
@@ -137,6 +166,7 @@
             android:layout_marginStart="4dp"
             android:layout_marginTop="24dp"
             android:text="Question 9"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView20" />
 
@@ -147,6 +177,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView55" />
 
@@ -157,6 +188,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView43" />
 
@@ -167,6 +199,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="24dp"
             android:text="Question 8"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView16" />
 
@@ -177,6 +210,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView53"
             tools:src="@tools:sample/avatars" />
@@ -188,6 +222,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="64dp"
             android:text="Right answer:"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView43" />
 
@@ -197,6 +232,7 @@
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="14dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView44"
             tools:src="@tools:sample/avatars" />
@@ -209,6 +245,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -220,6 +257,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/textView62"
             app:layout_constraintStart_toEndOf="@+id/textView62"
             app:layout_constraintTop_toTopOf="@+id/textView62" />
@@ -230,6 +268,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/textView57"
             app:layout_constraintStart_toEndOf="@+id/textView57"
             app:layout_constraintTop_toTopOf="@+id/textView57" />
@@ -240,6 +279,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/textView36"
             app:layout_constraintStart_toEndOf="@+id/textView36"
             app:layout_constraintTop_toTopOf="@+id/textView36" />
@@ -250,6 +290,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/textView32"
             app:layout_constraintStart_toEndOf="@+id/textView32"
             app:layout_constraintTop_toTopOf="@+id/textView32" />
@@ -261,6 +302,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView37"
             tools:src="@tools:sample/avatars" />
@@ -272,6 +314,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="64dp"
             android:text="Right answer:"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
@@ -281,6 +324,7 @@
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="14dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView38"
             tools:src="@tools:sample/avatars" />
@@ -293,6 +337,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -305,6 +350,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:text="Question 7"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
@@ -315,6 +361,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
@@ -325,6 +372,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView33"
             tools:src="@tools:sample/avatars" />
@@ -336,6 +384,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="60dp"
             android:text="Right answer:"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
@@ -345,6 +394,7 @@
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="14dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView34"
             tools:src="@tools:sample/avatars" />
@@ -357,6 +407,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -369,6 +420,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:text="Question 6"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
@@ -379,6 +431,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
@@ -389,6 +442,7 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView29"
             tools:src="@tools:sample/avatars" />
@@ -400,6 +454,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="48dp"
             android:text="Right answer:"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
@@ -409,6 +464,7 @@
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="14dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView30"
             tools:src="@tools:sample/avatars" />
@@ -421,6 +477,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -433,6 +490,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:text="Question 5"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
@@ -443,6 +501,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
@@ -454,6 +513,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -466,6 +526,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:text="Question 4"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
@@ -477,6 +538,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -489,6 +551,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="24dp"
             android:text="Question 3"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
@@ -498,6 +561,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/textView17"
             app:layout_constraintStart_toEndOf="@+id/textView17"
             app:layout_constraintTop_toTopOf="@+id/textView17" />
@@ -508,6 +572,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/textView25"
             app:layout_constraintStart_toEndOf="@+id/textView25"
             app:layout_constraintTop_toTopOf="@+id/textView25" />
@@ -518,6 +583,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/textView27"
             app:layout_constraintStart_toEndOf="@+id/textView27"
             app:layout_constraintTop_toTopOf="@+id/textView27" />
@@ -528,6 +594,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/textView40"
             app:layout_constraintStart_toEndOf="@+id/textView40"
             app:layout_constraintTop_toTopOf="@+id/textView40" />
@@ -538,6 +605,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="@+id/textView"
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toTopOf="@+id/textView"
@@ -551,7 +619,8 @@
             android:layout_marginTop="24dp"
             android:text="Question 2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/textView15"
@@ -561,6 +630,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -573,6 +643,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
@@ -583,6 +654,7 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView13"
             tools:src="@tools:sample/avatars" />
@@ -594,6 +666,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="48dp"
             android:text="Right answer:"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
@@ -603,6 +676,7 @@
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="14dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView14"
             tools:src="@tools:sample/avatars" />
@@ -614,6 +688,7 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView10"
             tools:src="@tools:sample/avatars" />
@@ -625,6 +700,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
@@ -634,6 +710,7 @@
             android:layout_height="140dp"
             android:layout_marginTop="560dp"
             android:layout_marginEnd="14dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
             tools:src="@tools:sample/avatars" />
@@ -645,6 +722,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="48dp"
             android:text="Right answer:"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
@@ -655,6 +733,7 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7"
             tools:src="@tools:sample/avatars" />
@@ -666,6 +745,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -677,7 +757,8 @@
             android:layout_marginEnd="14dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/avatars"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/textView8"
@@ -686,6 +767,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="56dp"
             android:text="Right answer:"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -694,21 +776,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/minus_blue_background"
+            android:contentDescription="@string/background_books"
             android:src="@drawable/books_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/background_books" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/magick_books"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/image_magick_books"
             android:src="@drawable/magick_books"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/image_magick_books" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_again"
@@ -727,17 +809,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView29"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.75" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="@dimen/_12dp"
             android:text="Question 1"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/magick_books" />
+            app:layout_constraintTop_toBottomOf="@+id/title" />
 
         <TextView
             android:id="@+id/textView2"
@@ -747,6 +830,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -758,6 +842,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -768,6 +853,7 @@
             android:layout_marginStart="42dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
+            android:visibility="gone"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
             tools:src="@tools:sample/avatars" />
@@ -779,6 +865,7 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="48dp"
             android:text="Right answer:"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/textView2"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -788,6 +875,7 @@
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="14dp"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
             tools:src="@tools:sample/avatars" />

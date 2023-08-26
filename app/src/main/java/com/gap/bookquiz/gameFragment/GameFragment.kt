@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.gap.bookquiz.FinishFragment
+import com.gap.bookquiz.finfishFragment.FinishFragment
 import com.gap.bookquiz.R
 import com.gap.bookquiz.database.AppDatabase
 import com.gap.bookquiz.databinding.FragmentGameBinding
@@ -17,7 +17,7 @@ class GameFragment : Fragment() {
     private var _binding: FragmentGameBinding? = null
     private val binding get() = _binding!!
     private lateinit var viewModel: GameViewModel
-    private  var rightBookId: Int = -1
+    private var rightBookId: Int = -1
     private var countGame: Int = 0
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
@@ -45,37 +45,41 @@ class GameFragment : Fragment() {
             }
         }
         setOnClickListeners()
+
     }
 
     private fun setOnClickListeners() {
-        if (countGame < 9) {
 
-            binding.imageView1.setOnClickListener { view ->
-                val clickedResId = view.tag as Int
-                viewModel.updateSelectedId(rightBookId, clickedResId)
-                viewModel.getNewQuestion()
-                countGame++
-            }
 
-            binding.imageView2.setOnClickListener { view ->
-                val clickedResId = view.tag as Int
-                viewModel.updateSelectedId(rightBookId, clickedResId)
-                viewModel.getNewQuestion()
-                countGame++
-            }
-
-            binding.imageView3.setOnClickListener { view ->
-                val clickedResId = view.tag as Int
-                viewModel.updateSelectedId(rightBookId, clickedResId)
-                viewModel.getNewQuestion()
-                countGame++
-            }
-
-            Log.d("TAG", "setOnClickListeners: $countGame")
-        } else if (countGame == 9) {
-            launchFragment(FinishFragment())
+        binding.imageView1.setOnClickListener { view ->
+            val clickedResId = view?.tag as Int
+            viewModel.updateSelectedId(rightBookId, clickedResId)
+            endGame()
         }
 
+        binding.imageView2.setOnClickListener { view ->
+            val clickedResId = view?.tag as Int
+            viewModel.updateSelectedId(rightBookId, clickedResId)
+            endGame()
+        }
+
+        binding.imageView3.setOnClickListener { view ->
+            val clickedResId = view?.tag as Int
+            viewModel.updateSelectedId(rightBookId, clickedResId)
+            endGame()
+        }
+
+
+    }
+
+    private fun endGame() {
+        countGame++
+        Log.d("TAG12", "setOnClickListeners: $countGame")
+        if (countGame < 10) {
+            viewModel.getNewQuestion()
+        } else {
+            launchFragment(FinishFragment())
+        }
     }
 
     private fun launchFragment(fragment: Fragment) {
@@ -85,9 +89,9 @@ class GameFragment : Fragment() {
                 R.id.main_fragment_container_view,
                 fragment
             )
-            .addToBackStack(null)
             .commit()
     }
+
     private fun setImage(selectImage: List<Int>) {
         binding.imageView1.setImageResource(selectImage[0])
         binding.imageView1.tag = selectImage[0]
