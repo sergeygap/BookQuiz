@@ -23,6 +23,8 @@ class FinishFragment : Fragment() {
     private lateinit var listTextViewQ: List<TextView>
     private lateinit var listImageViewQ: List<ImageView>
     private lateinit var listImageViewQNotRight: List<ImageView>
+    private lateinit var listTextViewQNotRight: List<TextView>
+    private lateinit var listTextViewQColor: List<TextView>
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -95,6 +97,30 @@ class FinishFragment : Fragment() {
             binding.imageViewQNineNotRight,
             binding.imageViewQTenNotRight,
         )
+        listTextViewQNotRight = listOf(
+            binding.textViewQFirstNotRight,
+            binding.textViewQSecondNotRight,
+            binding.textViewQThirdNotRight,
+            binding.textViewQFourNotRight,
+            binding.textViewQFiveNotRight,
+            binding.textViewQSixNotRight,
+            binding.textViewQSevenNotRight,
+            binding.textViewQEightNotRight,
+            binding.textViewQNineNotRight,
+            binding.textViewQTenNotRight
+        )
+        listTextViewQColor = listOf(
+            binding.textViewQFirstColor,
+            binding.textViewSecondColor,
+            binding.textViewThirdColor,
+            binding.textViewFourColor,
+            binding.textViewFiveColor,
+            binding.textViewSixColor,
+            binding.textViewSevenColor,
+            binding.textViewEightColor,
+            binding.textViewNineColor,
+            binding.textViewTenColor
+        )
     }
 
     private fun setAnswers(it: List<Game>) {
@@ -105,23 +131,19 @@ class FinishFragment : Fragment() {
             val currentTextView = listTextViewQ[index]
             val currentImageView = listImageViewQ[index]
             val currentImageViewNotRight = listImageViewQNotRight[index]
+            val currentTextViewNotRight = listTextViewQNotRight[index]
+            val currentTextViewColor = listTextViewQColor[index]
             currentTextView.text = currentGame.bookText
             currentImageView.setImageResource(currentGame.selectedBookId!!)
             if (currentGame.bookCover != currentGame.selectedBookId) {
                 currentImageViewNotRight.visibility = View.VISIBLE
                 currentImageViewNotRight.setImageResource(currentGame.bookCover)
+                currentTextViewNotRight.visibility = View.VISIBLE
+                currentTextViewColor.setBackgroundResource(R.drawable.wrong_answer)
             } else {
                 currentImageViewNotRight.visibility = View.INVISIBLE
-            }
-        }
-
-        with(binding) {
-            if (it[0].bookCover != it[0].selectedBookId) {
-                binding.textViewQFirstNotRight.visibility = View.VISIBLE
-                binding.textViewQFirstColor.setBackgroundResource(R.drawable.wrong_answer)
-            } else {
-                binding.textViewQFirstNotRight.visibility = View.INVISIBLE
-                binding.textViewQFirstColor.setBackgroundResource(R.drawable.right_answer)
+                currentTextViewNotRight.visibility = View.INVISIBLE
+                currentTextViewColor.setBackgroundResource(R.drawable.right_answer)
             }
         }
     }

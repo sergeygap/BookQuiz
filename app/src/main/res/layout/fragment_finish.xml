@@ -68,7 +68,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView62" />
 
         <TextView
-            android:id="@+id/textView61"
+            android:id="@+id/textViewEightColor"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
@@ -254,7 +254,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView52" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/textViewTenColor"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
@@ -265,7 +265,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView62" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/textViewNineColor"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
@@ -276,7 +276,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView57" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textViewSixColor"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
@@ -287,7 +287,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView36" />
 
         <TextView
-            android:id="@+id/textView41"
+            android:id="@+id/textViewFiveColor"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
@@ -569,7 +569,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView17" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewThirdColor"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
@@ -580,7 +580,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView25" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/textViewFourColor"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
@@ -591,7 +591,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView27" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/textViewSevenColor"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
