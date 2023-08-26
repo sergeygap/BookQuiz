@@ -64,6 +64,7 @@ class FinishFragment : Fragment() {
             .commit()
     }
 
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
