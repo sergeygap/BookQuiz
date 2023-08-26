@@ -31,37 +31,37 @@
             tools:text="@string/number_of_correct_answer" />
 
         <ImageView
-            android:id="@+id/imageView29"
+            android:id="@+id/imageViewQTen"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/textView63"
+            app:layout_constraintStart_toStartOf="@+id/textView63"
             app:layout_constraintTop_toBottomOf="@+id/textView63"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView59"
+            android:id="@+id/textViewQTenNotRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="64dp"
+            android:layout_marginEnd="48dp"
             android:text="Right answer:"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView60" />
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFirts"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQTen" />
 
         <TextView
-            android:id="@+id/textView60"
+            android:id="@+id/textViewQTen"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -73,125 +73,126 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/textView52"
             app:layout_constraintStart_toEndOf="@+id/textView52"
             app:layout_constraintTop_toTopOf="@+id/textView52"
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
-            android:id="@+id/imageView28"
+            android:id="@+id/imageViewQTenNotRight"
             android:layout_width="100dp"
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="14dp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView59"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQTenNotRight"
+            app:layout_constraintStart_toStartOf="@+id/textViewQTenNotRight"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQTenNotRight"
             tools:src="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/textView62"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="24dp"
             android:text="Question 10"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewQNine" />
 
         <TextView
             android:id="@+id/textView63"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView60" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewQTen" />
 
         <ImageView
-            android:id="@+id/imageView27"
+            android:id="@+id/imageViewQNine"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/textView58"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView58"
             app:layout_constraintTop_toBottomOf="@+id/textView58"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView54"
+            android:id="@+id/textViewQNineNotRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="64dp"
+            android:layout_marginEnd="48dp"
             android:text="Right answer:"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView55" />
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFirts"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQNine" />
 
         <TextView
-            android:id="@+id/textView55"
+            android:id="@+id/textViewQNine"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView57" />
 
         <ImageView
-            android:id="@+id/imageView26"
+            android:id="@+id/imageViewQNineNotRight"
             android:layout_width="100dp"
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="14dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView54"
-            tools:src="@tools:sample/avatars"
-            android:visibility="gone" />
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQNineNotRight"
+            app:layout_constraintStart_toStartOf="@+id/textViewQNineNotRight"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQNineNotRight"
+            tools:src="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/textView57"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="24dp"
             android:text="Question 9"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewQEight" />
 
         <TextView
             android:id="@+id/textView58"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView55" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewQNine" />
 
         <TextView
             android:id="@+id/textView53"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewQEight" />
 
         <TextView
             android:id="@+id/textView52"
@@ -200,53 +201,53 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="24dp"
             android:text="Question 8"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewQSeven" />
 
         <ImageView
-            android:id="@+id/imageView20"
+            android:id="@+id/imageViewQEight"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/textView53"
+            app:layout_constraintStart_toStartOf="@+id/textView53"
             app:layout_constraintTop_toBottomOf="@+id/textView53"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView44"
+            android:id="@+id/textViewQEightNotRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="64dp"
+            android:layout_marginEnd="48dp"
             android:text="Right answer:"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFirts"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQEight" />
 
         <ImageView
-            android:id="@+id/imageView21"
+            android:id="@+id/imageViewQEightNotRight"
             android:layout_width="100dp"
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="14dp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView44"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQEightNotRight"
+            app:layout_constraintStart_toStartOf="@+id/textViewQEightNotRight"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQEightNotRight"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView43"
+            android:id="@+id/textViewQEight"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -258,7 +259,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/textView62"
             app:layout_constraintStart_toEndOf="@+id/textView62"
             app:layout_constraintTop_toTopOf="@+id/textView62" />
@@ -269,7 +270,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/textView57"
             app:layout_constraintStart_toEndOf="@+id/textView57"
             app:layout_constraintTop_toTopOf="@+id/textView57" />
@@ -280,7 +281,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/textView36"
             app:layout_constraintStart_toEndOf="@+id/textView36"
             app:layout_constraintTop_toTopOf="@+id/textView36" />
@@ -291,54 +292,54 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/textView32"
             app:layout_constraintStart_toEndOf="@+id/textView32"
             app:layout_constraintTop_toTopOf="@+id/textView32" />
 
         <ImageView
-            android:id="@+id/imageView16"
+            android:id="@+id/imageViewQSeven"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/textView37"
+            app:layout_constraintStart_toStartOf="@+id/textView37"
             app:layout_constraintTop_toBottomOf="@+id/textView37"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView38"
+            android:id="@+id/textViewQSevenNotRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="64dp"
+            android:layout_marginEnd="48dp"
             android:text="Right answer:"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFirts"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQSeven" />
 
         <ImageView
-            android:id="@+id/imageView17"
+            android:id="@+id/imageViewQSevenNotRight"
             android:layout_width="100dp"
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="14dp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView38"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQSevenNotRight"
+            app:layout_constraintStart_toStartOf="@+id/textViewQSevenNotRight"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQSevenNotRight"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView39"
+            android:id="@+id/textViewQSeven"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -348,67 +349,67 @@
             android:id="@+id/textView40"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="24dp"
             android:text="Question 7"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewQSix" />
 
         <TextView
             android:id="@+id/textView37"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewQSeven" />
 
         <ImageView
-            android:id="@+id/imageView14"
+            android:id="@+id/imageViewQSix"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/textView33"
+            app:layout_constraintStart_toStartOf="@+id/textView33"
             app:layout_constraintTop_toBottomOf="@+id/textView33"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView34"
+            android:id="@+id/textViewQSixNotRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="60dp"
+            android:layout_marginEnd="48dp"
             android:text="Right answer:"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFirts"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQSix" />
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/imageViewQSixNotRight"
             android:layout_width="100dp"
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="14dp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView34"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQSixNotRight"
+            app:layout_constraintStart_toStartOf="@+id/textViewQSixNotRight"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQSixNotRight"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView35"
+            android:id="@+id/textViewQSix"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -421,64 +422,64 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:text="Question 6"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewQFive" />
 
         <TextView
             android:id="@+id/textView33"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewQSix" />
 
         <ImageView
-            android:id="@+id/imageView12"
+            android:id="@+id/imageViewQFive"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:layout_marginStart="40dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/textView29"
+            app:layout_constraintStart_toStartOf="@+id/textView29"
             app:layout_constraintTop_toBottomOf="@+id/textView29"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView30"
+            android:id="@+id/textViewQFiveNotRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="48dp"
             android:text="Right answer:"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFirts"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQFive" />
 
         <ImageView
-            android:id="@+id/imageView13"
+            android:id="@+id/imageViewQFiveNotRight"
             android:layout_width="100dp"
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="14dp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView30"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFiveNotRight"
+            app:layout_constraintStart_toStartOf="@+id/textViewQFiveNotRight"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQFiveNotRight"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView31"
+            android:id="@+id/textViewQFive"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -491,30 +492,30 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:text="Question 5"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewQFour" />
 
         <TextView
             android:id="@+id/textView29"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewQFive" />
 
         <TextView
-            android:id="@+id/textView28"
+            android:id="@+id/textViewQFour"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -527,19 +528,19 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
             android:text="Question 4"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewQThird" />
 
         <TextView
-            android:id="@+id/textView26"
+            android:id="@+id/textViewQThird"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -552,17 +553,17 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="24dp"
             android:text="Question 3"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewQSecond" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/textViewSecondColor"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/textView17"
             app:layout_constraintStart_toEndOf="@+id/textView17"
             app:layout_constraintTop_toTopOf="@+id/textView17" />
@@ -573,7 +574,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/textView25"
             app:layout_constraintStart_toEndOf="@+id/textView25"
             app:layout_constraintTop_toTopOf="@+id/textView25" />
@@ -584,7 +585,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/textView27"
             app:layout_constraintStart_toEndOf="@+id/textView27"
             app:layout_constraintTop_toTopOf="@+id/textView27" />
@@ -595,18 +596,18 @@
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/textView40"
             app:layout_constraintStart_toEndOf="@+id/textView40"
             app:layout_constraintTop_toTopOf="@+id/textView40" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/textViewQFirstColor"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginStart="12dp"
             android:background="@drawable/right_answer"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/textView"
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toTopOf="@+id/textView"
@@ -619,19 +620,19 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="24dp"
             android:text="Question 2"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4"
-            android:visibility="gone" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewQFirst" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/textViewQSecond"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -641,56 +642,56 @@
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewQFour" />
 
         <ImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/imageViewQFour"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:layout_marginStart="40dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
             app:layout_constraintTop_toBottomOf="@+id/textView13"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/textViewQFourNotRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="48dp"
             android:text="Right answer:"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFirts"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQFour" />
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/imageViewQFourNotRight"
             android:layout_width="100dp"
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="14dp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFourNotRight"
+            app:layout_constraintStart_toStartOf="@+id/textViewQFourNotRight"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQFourNotRight"
             tools:src="@tools:sample/avatars" />
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/imageViewQThird"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:layout_marginStart="40dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/textView10"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
             app:layout_constraintTop_toBottomOf="@+id/textView10"
             tools:src="@tools:sample/avatars" />
 
@@ -698,44 +699,44 @@
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewQThird" />
 
         <ImageView
-            android:id="@+id/imageView9"
+            android:id="@+id/imageViewQThirdNotRight"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:layout_marginTop="560dp"
-            android:layout_marginEnd="14dp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:layout_marginTop="12dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQThirdNotRight"
+            app:layout_constraintStart_toStartOf="@+id/textViewQThirdNotRight"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQThirdNotRight"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/textViewQThirdNotRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="48dp"
             android:text="Right answer:"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFirts"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQThird" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imageViewQSecond"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:layout_marginStart="40dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/textView7"
             tools:src="@tools:sample/avatars" />
 
@@ -743,34 +744,34 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewQSecond" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/imageViewQSecondNotRight"
             android:layout_width="100dp"
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="14dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8"
-            tools:src="@tools:sample/avatars"
-            android:visibility="gone" />
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQSecondNotRight"
+            app:layout_constraintStart_toStartOf="@+id/textViewQSecondNotRight"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQSecondNotRight"
+            tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textViewQSecondNotRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="56dp"
+            android:layout_marginEnd="48dp"
             android:text="Right answer:"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFirts"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQSecond" />
 
         <ImageView
             android:id="@+id/background_books"
@@ -798,19 +799,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="34dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="22dp"
             android:layout_marginEnd="34dp"
-            android:layout_marginBottom="@dimen/_22dp"
-            android:background="@drawable/corner_button"
+            android:layout_marginBottom="8dp"
 
+            android:background="@drawable/corner_button"
             android:text="@string/play_again"
             android:textColor="@color/white"
             android:textSize="@dimen/mediun_text_size_30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView29"
-            app:layout_constraintVertical_bias="0.75" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewQTen" />
 
         <TextView
             android:id="@+id/textView"
@@ -819,19 +819,19 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="@dimen/_12dp"
             android:text="Question 1"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewQFirts"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:text="It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -840,45 +840,46 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="36dp"
             android:layout_marginTop="12dp"
             android:text="Your answer:"
-            android:visibility="gone"
+            android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewQFirts" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageViewQFirst"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:layout_marginStart="42dp"
             android:layout_marginTop="12dp"
             android:adjustViewBounds="true"
-            android:visibility="gone"
-            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
             tools:src="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewQFirstNotRight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="48dp"
             android:text="Right answer:"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFirts"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQFirts" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imageViewQFirstNotRight"
             android:layout_width="100dp"
             android:layout_height="140dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="14dp"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/textViewQFirstNotRight"
+            app:layout_constraintStart_toStartOf="@+id/textViewQFirstNotRight"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQFirstNotRight"
             tools:src="@tools:sample/avatars" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,14 +1,16 @@
 package com.gap.bookquiz.finfishFragment
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.gap.bookquiz.R
 import com.gap.bookquiz.database.AppDatabase
+import com.gap.bookquiz.database.Game
 import com.gap.bookquiz.databinding.FragmentFinishBinding
 import com.gap.bookquiz.gameFragment.GameFragment
 
@@ -18,6 +20,9 @@ class FinishFragment : Fragment() {
     private var _binding: FragmentFinishBinding? = null
     private val binding get() = _binding!!
     private lateinit var viewModel: FinishViewModel
+    private lateinit var listTextViewQ: List<TextView>
+    private lateinit var listImageViewQ: List<ImageView>
+    private lateinit var listImageViewQNotRight: List<ImageView>
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -35,16 +40,90 @@ class FinishFragment : Fragment() {
             this, viewModelFactory
         )[FinishViewModel::class.java]
         viewModel.getRightNumberAnswers()
+        viewModel.getAllIsNotNull()
         viewModel.numberLiveData.observe(requireActivity()) {
             val text = getString(R.string.number_of_correct_answer, it.toString())
             binding.title.text = text
-            Log.d("testtest", "onViewCreated: $text")
+        }
+        viewModel.answerLiveData.observe(requireActivity()) {
+
+
+
+            setAnswers(it)
+
 
         }
 
-
         setOnClickListener()
 
+    }
+
+    private fun addAllViewsInList() {
+        listTextViewQ = listOf(
+            binding.textViewQFirts,
+            binding.textViewQSecond,
+            binding.textViewQThird,
+            binding.textViewQFour,
+            binding.textViewQFive,
+            binding.textViewQSix,
+            binding.textViewQSeven,
+            binding.textViewQEight,
+            binding.textViewQNine,
+            binding.textViewQTen
+        )
+        listImageViewQ = listOf(
+            binding.imageViewQFirst,
+            binding.imageViewQSecond,
+            binding.imageViewQThird,
+            binding.imageViewQFour,
+            binding.imageViewQFive,
+            binding.imageViewQSix,
+            binding.imageViewQSeven,
+            binding.imageViewQEight,
+            binding.imageViewQNine,
+            binding.imageViewQTen
+        )
+        listImageViewQNotRight = listOf(
+            binding.imageViewQFirstNotRight,
+            binding.imageViewQSecondNotRight,
+            binding.imageViewQThirdNotRight,
+            binding.imageViewQFourNotRight,
+            binding.imageViewQFiveNotRight,
+            binding.imageViewQSixNotRight,
+            binding.imageViewQSevenNotRight,
+            binding.imageViewQEightNotRight,
+            binding.imageViewQNineNotRight,
+            binding.imageViewQTenNotRight,
+        )
+    }
+
+    private fun setAnswers(it: List<Game>) {
+        addAllViewsInList()
+
+        for (index in it.indices) {
+            val currentGame = it[index]
+            val currentTextView = listTextViewQ[index]
+            val currentImageView = listImageViewQ[index]
+            val currentImageViewNotRight = listImageViewQNotRight[index]
+            currentTextView.text = currentGame.bookText
+            currentImageView.setImageResource(currentGame.selectedBookId!!)
+            if (currentGame.bookCover != currentGame.selectedBookId) {
+                currentImageViewNotRight.visibility = View.VISIBLE
+                currentImageViewNotRight.setImageResource(currentGame.bookCover)
+            } else {
+                currentImageViewNotRight.visibility = View.INVISIBLE
+            }
+        }
+
+        with(binding) {
+            if (it[0].bookCover != it[0].selectedBookId) {
+                binding.textViewQFirstNotRight.visibility = View.VISIBLE
+                binding.textViewQFirstColor.setBackgroundResource(R.drawable.wrong_answer)
+            } else {
+                binding.textViewQFirstNotRight.visibility = View.INVISIBLE
+                binding.textViewQFirstColor.setBackgroundResource(R.drawable.right_answer)
+            }
+        }
     }
 
     private fun setOnClickListener() {

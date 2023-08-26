@@ -1,6 +1,5 @@
 package com.gap.bookquiz.gameFragment
 
-import android.media.CamcorderProfile.getAll
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -46,7 +45,7 @@ class GameViewModel(val dao: GameDao) : ViewModel() {
         }
     }
 
-     fun selectImage(currentAnswerImage: Int, allGameElements: List<Game>): List<Int> {
+    fun selectImage(currentAnswerImage: Int, allGameElements: List<Game>): List<Int> {
 
         if (!allGameElements.isNullOrEmpty()) {
             val availableImages = allGameElements.map { it.bookCover }
@@ -60,8 +59,7 @@ class GameViewModel(val dao: GameDao) : ViewModel() {
             imageList.addAll(selectedOtherImages)
 
             return imageList//.shuffled()
-        }
-        else
+        } else
             return listOf(0)
     }
 }

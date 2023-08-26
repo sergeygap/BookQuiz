@@ -1,6 +1,5 @@
 package com.gap.bookquiz.database
 
-import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
@@ -24,7 +23,10 @@ interface GameDao {
     suspend fun getAnotherCover(rightBookId: Int): Game
 
     @Query("SELECT * FROM game")
-   suspend fun getAll(): List<Game>
+    suspend fun getAll(): List<Game>
+
+    @Query("SELECT * FROM game WHERE selectedBookId IS NOT NULL")
+    suspend fun getAllIsNotNull(): List<Game>
 
     @Query("SELECT COUNT(rightBookId) FROM game WHERE bookCover = selectedBookId AND selectedBookId IS NOT NULL")
     suspend fun countRightAnswers(): Int

@@ -24,6 +24,7 @@ class StartActivity : AppCompatActivity() {
             return
         }
 
+
         super.onBackPressed()
 
     }
