@@ -9,5 +9,5 @@ data class Game(
     val rightBookId: Int = 0,
     val bookText: String,
     val bookCover: Int,
-    val selectedBookId: Int
+    val selectedBookId: Int?
 )

@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.gap.bookquiz.GameFragment
+import androidx.lifecycle.ViewModelProvider
+import com.gap.bookquiz.gameFragment.GameFragment
 import com.gap.bookquiz.R
+import com.gap.bookquiz.database.AppDatabase
 import com.gap.bookquiz.databinding.FragmentStartBinding
 
 
@@ -14,6 +16,7 @@ class StartFragment : Fragment() {
 
     private var _binding: FragmentStartBinding? = null
     private val binding get() = _binding!!
+    private lateinit var viewModel: StartViewModel
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -24,8 +27,16 @@ class StartFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        clickListener()
+        val application = requireNotNull(this.activity).application
+        val dao = AppDatabase.getInstance(application).gameDao
+        val viewModelFactory = StartViewModelFactory(dao)
+        viewModel = ViewModelProvider(
+            this, viewModelFactory
+        ).get(StartViewModel::class.java)
 
+        viewModel.addQuestions(requireContext())
+
+        clickListener()
     }
 
     private fun clickListener() {
@@ -33,6 +44,7 @@ class StartFragment : Fragment() {
             launchFragment(GameFragment())
         }
     }
+
     private fun launchFragment(fragment: Fragment) {
         requireActivity().supportFragmentManager
             .beginTransaction()
@@ -43,6 +55,7 @@ class StartFragment : Fragment() {
             .addToBackStack(null)
             .commit()
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

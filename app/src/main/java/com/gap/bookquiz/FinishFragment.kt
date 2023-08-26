@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.gap.bookquiz.databinding.FragmentFinishBinding
+import com.gap.bookquiz.gameFragment.GameFragment
 
 
 class FinishFragment : Fragment() {
